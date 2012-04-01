@@ -12,26 +12,26 @@
     
 	<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 
-	<script type="text/html" id="tweet"></script>
-        <div class="tweet" style="border-width:2px; border-style:solid; background:#ffffff; border-color:#1B91E0;">
-            <div class="tweet-dogear "></div>
-            <div class="tweet-image">
-                <img class="thumbnail-image" data-bind="attr: { src: image }">
-            </div>
-            <div class="tweet-content">
-                <div class="tweet-row">
-                    <span class="tweet-user-name">
-                        <span class="tweet-screen-name" data-bind="text: user"></span>
-                        <span class="tweet-full-name" data-bind="text: name"></span>
-                    </span>
-                </div>
-                <div class="tweet-row tweet-text" data-bind="text: text"></div>
-                <div class="tweet-row">
-                    <span class="tweet-timestamp" data-bind="text:time"></span>
-                </div>
-            </div>
-        </div>
-    
+	<script type="text/html" id="tweet">
+		<div class="tweet" style="border-width:2px; border-style:solid; background:#ffffff; border-color:#1B91E0;">
+			<div class="tweet-dogear "></div>
+			<div class="tweet-image">
+				<img class="thumbnail-image" data-bind="attr: { src: image }">
+			</div>
+			<div class="tweet-content">
+			<div class="tweet-row">
+				<span class="tweet-user-name">
+					<span class="tweet-screen-name" data-bind="text: user"></span>
+					<span class="tweet-full-name" data-bind="text: name"></span>
+				</span>
+			</div>
+			<div class="tweet-row tweet-text" data-bind="text: text"></div>
+			<div class="tweet-row">
+				<span class="tweet-timestamp" data-bind="text:time"></span>
+			</div>
+			</div>
+		</div>
+	</script>
 </head>
 <body>
 	<div>
@@ -45,15 +45,12 @@
 				</div>
 				<br />
 			</td></tr>
-			<tr height="2px">
+			<tr height="340px">
 			<td>
 				<br />
 				<div class="outer-wrap">
 				<div class="outer-container">
-				<div class="totals">Tweets Tracked: <span data-bind="text: total"></span></div>
-			</td></tr>
-			<tr height="340px">
-			<td>
+				<div class="totals">Tweets Tracked: <span data-bind="text: total"></span></div>			
 				<div class="tweet-container"  style="overflow:auto;" data-bind="template: { name: &apos;tweet&apos;, foreach: tweets }"></div>
 				</div>
 				</div>
